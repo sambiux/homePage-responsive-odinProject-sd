@@ -8,7 +8,21 @@ body{
     font-family: "Rowdies", sans-serif;
     font-weight: 300;
     font-style: normal;
+    
 }
+
+h1{
+    color: rgb(0, 0, 255);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 3px rgb(0, 0, 255, 0.6),
+        0 0 1px rgba(0, 0, 255),
+        0 0 4px rgba(0, 0, 255);
+}
+
+
 
 
 header{
@@ -25,13 +39,16 @@ header{
     width: 50%;    
 }
 
-.recuadro1 img{
+.recuadro1 > img{
     width: 10vw;
-    height: 25vh;    
+    height: 25vh; 
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px blue; 
 }
 
 .recuadro1 .personalInfo{
     border: 2px solid black;
+    border-radius: 12px;
     padding: 2vh;
     
 }
@@ -76,6 +93,7 @@ header{
     flex-direction: column;
     
     
+    
 }
 
 .proyect > div:first-child{
@@ -86,6 +104,8 @@ header{
     align-items: center;
     background-color: blue;
     color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 
@@ -95,6 +115,8 @@ header{
     gap: 15vh;
     border: 2px solid black;
     padding: 3vh;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
    
 }
 
@@ -124,6 +146,7 @@ footer{
     align-items: center;
     justify-content: space-around;
     height: 50vh;
+    width: 100%;
     
    
 }
@@ -147,6 +170,279 @@ footer .imgProy-footer img{
    
     
 }
+
+footer >div:nth-child(2) img{
+    border-radius: 12px;
+}
+
+
+/*TABLETS*/
+
+@media (max-width: 700px) {
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 100%;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}   
+    
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3vh; 
+
+}
+
+.recuadro1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 70%;   
+    
+}
+
+.recuadro1 img{
+    width: 25vw;
+    height: 19vh; 
+    
+}
+
+.recuadro1 .personalInfo{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9vh;
+    border-radius: 12px;
+    
+}
+
+.recuadro1 .personalInfo .imgsProy img{
+    width: 16px;
+    height: 25px;
+    
+}
+
+.proyects{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.proyect{
+   
+    height: 35vh;
+    width: 60vw ;
+    display: flex;
+    flex-direction: column;  
+}
+
+.proyect img{
+    width: 12px;
+    height: 20px;
+}
+
+.proyect > div:nth-child(2){
+    height: 40vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    
+   
+}
+
+
+
+.proyect > div:nth-child(2) >div:first-child{
+      font-size: 1em;
+}
+
+.proyect > div:nth-child(2) > div:nth-child(2){
+    display: flex;
+    justify-content: end;
+    gap: 2vh;
+    
+   
+}
+
+footer{
+    width: 100%;
+}
+
+
+footer >div:nth-child(2) img{
+    width: 50vw;
+    height: 35vh;
+    border-radius: 12px;
+
+}
+
+}
+
+/*portatiles imagen pequena*/
+
+@media(min-width:701px) and (max-width:1100px){
+    body{
+
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 100%;
+        font-family: "Rowdies", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }   
+        
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3vh; 
+    
+    }
+    
+    .recuadro1{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 70%;   
+        
+    }
+    
+    .recuadro1 img{
+        width: 15vw;
+        height: 19vh; 
+        
+    }
+    
+    .recuadro1 .personalInfo{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9vh;
+        border-radius: 12px;
+        
+    }
+    
+    .recuadro1 .personalInfo .imgsProy img{
+        width: 16px;
+        height: 25px;
+        
+    }
+    
+    .proyects{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        
+    
+    }
+    
+    .proyect{
+       
+        height: 35vh;
+        width: 40vw ;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    
+    
+    .proyect img{
+        width: 12px;
+        height: 20px;
+    }
+    
+    .proyect > div:nth-child(2){
+        height: 40vh;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+        
+       
+    }
+    
+    
+    
+    .proyect > div:nth-child(2) >div:first-child{
+          font-size: 1em;
+    }
+    
+    .proyect > div:nth-child(2) > div:nth-child(2){
+        display: flex;
+        justify-content: end;
+        gap: 2vh;
+        
+    }  
+    
+    footer >div:nth-child(2) img{
+        width: 50vw;
+        height: 35vh;
+        border-radius: 12px;
+    
+    }
+}
+
+@media (max-width:596px){
+
+    .recuadro1{
+        width: 90%;
+    }
+    
+    .recuadro1 img{
+        width: 40vw;
+    }
+    
+    .section-proyects h1{
+        font-size: 1.3em;
+    }
+    
+    .proyect{
+        width: 80vw;
+    }
+    
+    .proyect > div:first-child{
+        height: 25vh;
+    }
+    
+    footer{
+        flex-direction: column;
+        height: auto;
+        gap: 4vh;
+        padding: 4vh 0;
+    }
+
+    footer .imgProy-footer img{
+        width: 16px;
+    }
+    
+    footer >div:nth-child(2) img{
+        width: 60vw;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media (min-width:1101) and (max-width: 1328){
+    .proyect{
+        height: 35vh;
+        width: 80vw ;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+
+
+
+  
+        
 
 
 
