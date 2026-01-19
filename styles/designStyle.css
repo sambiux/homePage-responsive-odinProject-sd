@@ -1,0 +1,14 @@
+.recuadro1 .personalInfo{
+    
+    transition: 
+        transform 700ms ease-in-out 200ms,
+        box-shadow 700ms ease-in-out 200ms;
+}
+
+.recuadro1 .personalInfo:hover{
+    box-shadow: 5px 5px 2px blue;
+    transform: translateY(-2vh);
+}
+
+
+
